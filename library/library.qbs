@@ -6,13 +6,10 @@ StaticLibrary {
     consoleApplication: true
     cpp.cxxLanguageVersion: "c++20"
     cpp.enableRtti: false
-    cpp.includePaths: ["inc", "inc_dep"]
-    //cpp.cxxFlags: "-fsanitize=address"
-    //cpp.staticLibraries: "asan"
+    cpp.includePaths: ["inc"]
     files: [
         "inc/read_write_mutex.hpp",
     ]
-
     Group {     // Properties for the produced executable
         fileTagsFilter: "application"
         qbs.install: true
